@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #counter {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        button {
+            font-size: 1em;
+            padding: 10px 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- You can copy anything from the h1 opening tag below this text you are reading to the closing -->
+
+    <h1>Clicker Game</h1>
+    <div id="counter">0</div>
+    <button onclick="increaseCounter()">Click Me!</button>
+    <button onclick="resetCounter()">Reset</button>
+
+
+
+    <script>
+        
+        let count = 0;
+        const counterElement = document.getElementById('counter');
+
+        function increaseCounter() {
+            count++; // Increment the counter
+            counterElement.textContent = count; // this to update the counter display
+        }
+
+        function resetCounter() {
+            count = 0; // this resets the counter
+            counterElement.textContent = count; //this also to update the counter
+        }
+    </script>
+
+
+</body>
+</html>
